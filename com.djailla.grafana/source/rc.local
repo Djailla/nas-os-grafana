@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+sed -i "s/http_port = [0-9]*/http_port = $RAINBOW_PORT_WEB_UI/" /usr/share/grafana/conf/defaults.ini
+service grafana-server $1
+exit 0
