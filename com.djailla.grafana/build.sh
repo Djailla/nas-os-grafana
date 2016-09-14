@@ -11,7 +11,7 @@ then
     apt-get install -y adduser libfontconfig
     dpkg -i grafana_3.0.4-1464167696_amd64.deb
 else
-    echo "ARM"
+    echo "No ARM support"
 fi
 
 exit 0
